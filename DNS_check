@@ -12,11 +12,11 @@ app-service none
      }
    }                                                                                                                                                                                        }
            if { $usable==0} {
-                 tmsh::modify /ltm virtual-address 84.241.227.83 route-advertisement disabled
-                 tmsh::modify /ltm virtual-address 84.241.227.84 route-advertisement disabled
+                 tmsh::modify /ltm virtual-address 10.10.10.10 route-advertisement disabled
+                 tmsh::modify /ltm virtual-address 10.10.10.10 route-advertisement disabled
                         } else {
-                 tmsh::modify /ltm virtual-address 84.241.227.83 route-advertisement enabled
-                 tmsh::modify /ltm virtual-address 84.241.227.84 route-advertisement enabled
+                 tmsh::modify /ltm virtual-address 10.10.10.10 route-advertisement enabled
+                 tmsh::modify /ltm virtual-address 10.10.10.10 route-advertisement enabled
                   }
     }
     description none
